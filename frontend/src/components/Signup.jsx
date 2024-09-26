@@ -29,7 +29,6 @@ const Signup = () => {
 
     try {
         const response = await axios.post(`${url}/api/register`, formData)
-        console.log(response)
         navigate('/login')
     } catch (error) {
         console.log(error.message)
